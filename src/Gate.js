@@ -2,11 +2,13 @@ import React, {useState} from 'react';
 import './Style.css'
  function Gate(){
   const [isOpen, setOpen] = useState(true);
+  const gateState = isOpen ? 'Open the gate':'close the gate';
     return(
 
         <div className={`gate ${isOpen?"open":"closed"}` }>
-            Hello Toggle the button<br></br>
-            <p><button onClick={()=>setOpen(!isOpen)}>play with it</button></p>
+            <p>The gate is {isOpen? 'opened':'closed'}</p>
+            <p>Hello Toggle the button</p>
+            <p><button onClick={()=>setOpen(!isOpen)}>{gateState}</button></p>
         </div>
 
     )
