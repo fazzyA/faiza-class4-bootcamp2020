@@ -39,4 +39,4 @@ jobs:
     
     # Deploy Surge
     - name: Deploy React App to Surge
-      run: surge ./build faiza-class3-bootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build faiza-class4-bootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
