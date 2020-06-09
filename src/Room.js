@@ -8,7 +8,7 @@ import './Style.css'
     return(
 
         <div className={`gate ${isOn?"open":"closed"}` }>
-            <p>The switch is <b>{isOn? 'on':'off'}</b></p>
+            <p>The switch is <b>{onState}</b></p>
             <p>Current temperature:<b>{temp}Celsius</b></p>
             <p>Hello Toggle the button</p>
             <p><button onClick={()=>setOn(true)}>ON</button>
