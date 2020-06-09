@@ -1,7 +1,9 @@
 import React from 'react';
 import './Style.css';
+import { MediaCard } from './MediaCard';
 
 function App({name1,name2}) {
+  
   return (
     <div className="App">
       <h2>Hello teachers!</h2>
